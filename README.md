@@ -1,4 +1,54 @@
-# 06 Server-Side APIs: Weather Dashboard
+## Joanna Pastcan's Weather Dashboard
+
+# Description 
+* This is a Weather Dashboard app that will allow users to search for a city and view the current and future weather conditions for that city. The app will also display the temperature, humidity, wind speed, and the UV index of the city.
+
+* As a Coding-Bootcamp student, I will apply my current coding knowledge of HTML, CSS, JavaScript, Bootstrap, jQuery, and responsive design to this assignment. I will also be resourceful to apply new knowledge by conducting research and trial and error to create a working, interactive, and responsive Weather Dashboard app. 
+
+* This website will include HTML, CSS, and JavaScript with clean, polished, responsive, and functional code that I have written.
+
+
+# Acceptance Criteria
+
+* GIVEN a weather dashboard with form inputs
+* WHEN I search for a city
+* THEN I am presented with current and future conditions for that city and that city is added to the search history
+* WHEN I view current weather conditions for that city
+* THEN I am presented with the city name, the date, an icon representation of weather conditions, the temperature, the humidity, the wind speed, and the UV index
+* WHEN I view the UV index
+* THEN I am presented with a color that indicates whether the conditions are favorable, moderate, or severe
+* WHEN I view future weather conditions for that city
+* THEN I am presented with a 5-day forecast that displays the date, an icon representation of weather conditions, the temperature, the wind speed, and the humidity
+* WHEN I click on a city in the search history
+* THEN I am again presented with current and future conditions for that city
+
+
+# Links
+
+* GitHub Link: https://github.com/Jo37973/Weather-Dashboard
+
+* Website Link: 
+
+* Image of the Weather Dashboard:
+* 
+
+
+# Usage 
+* This app and code will be used for my UCI Coding Bootcamp Homework 6 assignment.
+
+# Credits
+* Joanna Pastcan 2022
+* Coding Class README below: © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
+* https://www.google.com as a resource to look up information
+* https://openweathermap.org/api/one-call-api
+
+
+
+
+
+
+# UCI Bootcamp Homework 6 README:
+## 06 Server-Side APIs: Weather Dashboard
 
 ## Your Task
 
