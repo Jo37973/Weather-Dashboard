@@ -1,3 +1,108 @@
+/* body styling */
 body {
     font-family: 'Nunito', sans-serif;
+    font-size: 16px;
+    background-color: rgb(120, 223, 212);
 }
+
+/* Header styling for the "Weather Dashboard" */
+header {
+    justify-content: center;
+    background-color: rgb(78, 141, 223);
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 0 4px 6px 0 black;
+    padding: 30px;
+    margin-bottom: 5px;
+}
+
+/* Current date and time displayed at the top */
+#currentTime {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    color: black;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+/* The following are styling the search card, city input, and button */
+.search {
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    box-shadow: 4px 4px 8px 0 black;
+    text-align: center;
+}
+
+.searchCard {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(142, 221, 184);
+    border-radius: 10px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 8px 0 black;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: rgb(214, 51, 51);
+    color: white;
+    padding: 10px 10px 10px 10px;
+    margin: 10px 10px 10px 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 black;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Styling for the current and 5 day forecast, when searched */
+.forecastCard {
+    color: white;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(78, 141, 223);
+    border-radius: 10px;
+    padding: 10px 0px 10px 0px;
+    box-shadow: 0 4px 8px 0 black;
+    padding: 10px 0px 10px 0px;
+    margin: 5px 0px 30px 5px;
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+}
+
+h3 {
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    font-size: 14px;
+
+}
+
+h4 {
+    font-weight: bold;
+}
+
+h5 {
+    margin-top: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+h6 {
+    display: inline;
+}
+
+.hidden {
+    display: none;
+}
+
+/* background-color: rgb(167, 122, 226);

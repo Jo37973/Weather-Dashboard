@@ -5,18 +5,68 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Dashboard</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"       integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700&display=swap" rel="stylesheet">
-    <!--Stylesheet-->
+    <script src="https://code.iconify.design/2/2.1.1/iconify.min.js"></script>
     <link rel="stylesheet" href="Assets/style.css"/>
 </head>
 <body>
-    <main></main>
-    <header></header>
+    <!--Weather Dashboard Header-->
+    <header class="row">
+        <h1>Weather Dashboard</h1> 
+        <!--Current Date and Time Display-->
+        <div id="currentTime" class="col-lg-12"></div>
+    </header>
+    <main class="container">
+        <!--City search input and button-->
+        <section class="row">
+            <div class="col-lg-2"></div>
+                <div class="col-lg-8 searchCard">
+                    <h2>Search for a City</h2>
+                    <h3>To View the Current and 5 Day Forecast</h3>
+                    <input id="searchInput" class="search" type="text" onfocus="this.value=''" value="Enter City Name"><br>
+                    <button id="searchBtn">Search</button>
+                </div>
+            <div class="col-lg-4"></div>
+        </section>
 
-    <!--JavaScript-->
+        <section id="weather" class="hidden">
+            <section class="row">
+                <div class="col-lg-3"></div>
+                    <div class="col-lg-6 forecastCard">
+                        <h4>City</h4><br>
+                        <h5>Current Weather:</h5>
+                        <span class="iconify" data-icon="fxemoji:sunrays" data-width="40" data-height="40"></span><br>
+                        <h6 id="conditionsC">Conditions: </h6><h6>- F</h6><br>
+                        <h6 id="tempC">Temp: </h6><h6>° F</h6><br>
+                        <h6 id="windC">Wind: </h6><h6>MPH</h6><br>
+                        <h6 id="humidityC">Humidity: </h6><h6>%</h6><br>
+                        <h6 id="uvC">UV Index: </h6><h6>0</h6><br>
+                        
+                        <h5 id="fiveDay">5 Day Forecast</h5>
+                        <span class="iconify" data-icon="fxemoji:sunrays" 
+                        data-width="40" data-height="40"></span><br>
+                        <h6 id="conditionsF">Conditions: </h6><h6>- F</h6><br>
+                        <h6 id="tempF">Temp: </h6><h6>° F</h6><br>
+                        <h6 id="windF">Wind: </h6><h6> MPH</h6><br>
+                        <h6 id="humidityF">Humidity: </h6><h6>%</h6><br>
+                    </div>
+                <div class="col-lg-3"></div>
+            </section>
+        </section>
+    </main>
+
+    <!--Bootstrap, JavaScript, DayJS-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js"integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg=="crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/utc.min.js" integrity="sha512-m00bfmYnAl3plEBlQfeQUhw/U2uvmw29V2+jxSWpAjankMWS+zAsjezbKWDEJNXqWq9o9qQZSOiA2RKDpa4D5w=="crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/plugin/timezone.min.js"integrity="sha512-pslqxxHAYPCxaSeFSmXXxDkLejD5dbFVC66aiVq0z4v7VTJBU+wqcG1OpNh4p3MjS2D6NCwz/H2QmSc7dXxryg==" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="Assets/script.js"></script>
 </body>
 </html>
+
