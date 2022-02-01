@@ -30,7 +30,11 @@
 * Website Link: 
 
 * Image of the Weather Dashboard:
-* 
+
+*![Weather-Dashboard1](https://user-images.githubusercontent.com/92402053/152033343-fdf02ccb-32e8-4b85-b2be-a26dbd5334fe.png)
+
+* ![Weather-Dashboard2](https://user-images.githubusercontent.com/92402053/152033356-a7019ce3-03cf-41e0-8464-d19f21c7959c.png)
+
 
 
 # Usage 
