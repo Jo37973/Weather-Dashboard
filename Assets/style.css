@@ -13,19 +13,10 @@ header {
     color: white;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 0 4px 6px 0 black;
-    padding: 30px;
+    padding: 20px;
     margin-bottom: 5px;
 }
 
-/* Current date and time displayed at the top */
-#currentTime {
-    text-align: center;
-    font-family: 'Nunito', sans-serif;
-    color: black;
-    padding: 10px;
-    margin-top: 5px;
-    margin-bottom: 5px;
-}
 /* The following are styling the search card, city input, and button */
 .search {
     font-family: 'Nunito', sans-serif;
@@ -62,6 +53,33 @@ button:hover {
     color: black;
 }
 
+li {
+    list-style: none;
+}
+
+/* Past search card styling */
+.history {
+    background-color: white;
+    color: black;
+}
+
+.history:hover {
+    background-color: rgb(247, 247, 181);
+    color: black;
+}
+
+.currentCard {
+    color: white;
+    text-align: center;
+    font-family: 'Nunito', sans-serif;
+    background-color: rgb(78, 141, 223);
+    border-radius: 10px;
+    padding: 10px 0px 10px 0px;
+    box-shadow: 0 4px 8px 0 black;
+    padding: 10px 0px 10px 0px;
+    margin: 5px 0px 30px 5px;
+}
+
 /* Styling for the current and 5 day forecast, when searched */
 .forecastCard {
     color: white;
@@ -88,16 +106,20 @@ h3 {
 }
 
 h4 {
+    text-align: center;
     font-weight: bold;
 }
 
 h5 {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
     margin-top: 20px;
     font-weight: bold;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 h6 {
+    font-family: 'Nunito', sans-serif;
     display: inline;
 }
 
@@ -105,4 +127,33 @@ h6 {
     display: none;
 }
 
+/* Colors for the UV Index */
+.uvcard {
+    display: inline;
+    border-radius: 5px;
+    padding: 3px 5px 0px 5px;
+    box-shadow: 0 4px 8px 0 black;
+    width: 40px; 
+  }
+
+.green {
+    background-color: green;
+    color: black;
+}
+
+.yellow {
+    background-color: yellow;
+    color: black;
+}
+
+.orange {
+    background-color: orange;
+    color: black;
+}
+
+.red {
+    background-color: red;
+    color: black;
+}
+  
 /* background-color: rgb(167, 122, 226);

@@ -38,6 +38,7 @@
 
 # Credits
 * Joanna Pastcan 2022
+* Collaborated with Dustin Smith
 * Coding Class README below: © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
 * https://www.google.com as a resource to look up information
 * https://openweathermap.org/api/one-call-api
