@@ -113,7 +113,7 @@ function getLatLon(search) {
             })
             .then(function (data) {
                 if (!data[0]) {
-                  alert("Location not found");
+                  alert("Location not found. Please enter a city name.");
                 } else {
                   addHistory(search)
                   getCityInfo(data[0]);
@@ -144,15 +144,14 @@ function citySearch(e){
 // This function starts the search for latitude and longitude using the search history buttons. 
 function useSearchHistory(e) {
   // This won't do a search if current element is not a search history button
-  if (!e.target.matches("history")) {
-    return;
-  };
+  //if (!e.target.matches("history")) {
+    //return;
+  //};
 
   var btn = e.target;
   var search = btn.getAttribute("data-search");
   getLatLon(search);
 };
-
 
 // Add the recent search to the search history and then redraw the buttons to the page
 function addHistory(search) {
@@ -161,7 +160,7 @@ function addHistory(search) {
     };
     searchHistory.push(search);
     localStorage.setItem("searchHistory", JSON.stringify(searchHistory));
-    // Call to buttons to the page after adding new search to search history
+    // Call to the buttons to the page after adding new search to search history
     historyButtons();
 };
 
@@ -174,6 +173,7 @@ function historyButtons() {
         if (i < 0){
           return;
         };
+        console.log(searchHistory);
 
         var btn = document.createElement("button");
         btn.setAttribute("type", "button");
@@ -198,6 +198,7 @@ function createHistory() {
     // Call to generate search history buttons
     historyButtons();
 };
+
 
 
 createHistory();
