@@ -1,4 +1,4 @@
-
+//DayJS to display the local time, and time zone
 dayjs.extend(window.dayjs_plugin_utc);
 dayjs.extend(window.dayjs_plugin_timezone);
 
@@ -12,7 +12,7 @@ var apiUrl = "https://api.openweathermap.org";
 var apiKey = "afe09d5361f7699e655a42a0c502491a";
 
 
-// Fills out information into the primary current day card with weather information
+// Fills out information into the primary current day card with weather, date and time information
 function drawTodayCard (city, weather, time) {
     let date = dayjs().tz(time).format("M/D/YYYY");
     let curDate = document.getElementById("todayDate");
@@ -51,11 +51,10 @@ function drawTodayCard (city, weather, time) {
 };
 
 
-// Fills info into the 5 day forcast cards
+// Fills info into the 5 day forecast cards
 function drawFiveDay(daily, time) {
     const day1 = dayjs().tz(time).add(1, "day").startOf("day").unix();
     const day5 = dayjs().tz(time).add(6, "day").startOf("day").unix();
-
     //console.log(daily);
 
     for (var i = 0; i < daily.length; i++) {
@@ -139,9 +138,7 @@ function citySearch(e){
     e.preventDefault();      
     var search = searchEl.value.trim();
     getLatLon(search);
-    searchEl.value = "";
-
-    
+    searchEl.value = "";    
 };
 
 // This function starts the search for latitude and longitude using the search history buttons. 

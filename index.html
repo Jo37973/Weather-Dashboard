@@ -19,20 +19,23 @@
         <h1>Weather Dashboard</h1> 
     </header>
     <main class="container">
-        <!--City search input and button-->
+        <!--City weather search card-->
         <section class="row">
             <div class="col-lg-2"></div>
                 <div class="col-lg-8 searchCard">
                     <h2>Search for a City</h2>
                     <h3>To View the Current and 5 Day Forecast</h3>
+                    <!--Search input area for the user to enter the city name-->
                     <input id="searchInput" class="search" type="text" onfocus="this.value=''" value="Enter City Name"><br>
+                    <!--Search Button-->
                     <button id="searchBtn">Search</button>
+                    <!--Search history from past city searches by the user-->
                     <h5>Search History:</h5>
                     <div id="searchHistory"></div>
                 </div>
             <div class="col-lg-4"></div>
         </section>
-
+        <!--Current weather card with displayed information-->
         <section id="content" class="hidden">
             <section class="row">
                 <div class="col-lg-3"></div>
@@ -48,11 +51,13 @@
                 </div>
                 <div class="col-lg-3"></div>
             </section>
+            <!--5 day weather foreaast card with displayed information-->
             <section><h2>5 Day Forecast</h2></section>
             <section class="row">
                 <div class="col-lg-1"></div>
                 <div class="col-lg-2 forecastCard">
                     <h5 id="day1"></h5>
+                    <!--Icon displaying the weather-cloud, sun, etc-->
                     <img id="day1Icon"><br>
                     <h6>Temp: </h6><h6 id="day1Temp"></h6><br>
                     <h6>Wind: </h6><h6 id="day1Wind"></h6><br>
@@ -91,7 +96,7 @@
         </section>
     </main>
 
-    <!--Bootstrap, JavaScript, DayJS-->
+    <!--Script links-->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.4/dayjs.min.js" integrity="sha512-0fcCRl828lBlrSCa8QJY51mtNqTcHxabaXVLPgw/jPA5Nutujh6CbTdDgRzl9aSPYW/uuE7c4SffFUQFBAy6lg==" crossorigin="anonymous"></script>
