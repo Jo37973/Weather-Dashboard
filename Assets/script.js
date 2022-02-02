@@ -53,29 +53,28 @@ function drawTodayCard (city, weather, time) {
 
 // Fills info into the 5 day forecast cards
 function drawFiveDay(daily, time) {
-    const day1 = dayjs().tz(time).add(1, "day").startOf("day").unix();
-    const day5 = dayjs().tz(time).add(6, "day").startOf("day").unix();
+  const day1 = dayjs().tz(time).add(1, "day").startOf("day").unix();
+  const day5 = dayjs().tz(time).add(6, "day").startOf("day").unix();
     //console.log(daily);
 
-    for (var i = 0; i < daily.length; i++) {
-      if (daily[i].dt >= day1 && daily[i].dt < day5) {
-          var tStamp = daily[i].dt;
-          let day = dayjs.unix(tStamp).tz(time).format("MMM D");
-          let date = document.getElementById(`day${i}`); 
-          let dayIcon = document.getElementById(`day${i}Icon`);
-          let dayTemp = document.getElementById(`day${i}Temp`);
-          let dayWind = document.getElementById(`day${i}Wind`);
-          let dayHumidity = document.getElementById(`day${i}Humidity`);
-            
-            let weatherIcon = `https://openweathermap.org/img/w/${daily[i].weather[0].icon}.png`;
+  for (var i = 0; i < daily.length; i++) {
+    if (daily[i].dt >= day1 && daily[i].dt < day5) {
+      var tStamp = daily[i].dt;
+      let day = dayjs.unix(tStamp).tz(time).format("MMM D");
+      let date = document.getElementById(`day${i}`); 
+      let dayIcon = document.getElementById(`day${i}Icon`);
+      let dayTemp = document.getElementById(`day${i}Temp`);
+      let dayWind = document.getElementById(`day${i}Wind`);
+      let dayHumidity = document.getElementById(`day${i}Humidity`);      
+      let weatherIcon = `https://openweathermap.org/img/w/${daily[i].weather[0].icon}.png`;
 
-            date.textContent = day;
-            dayIcon.setAttribute("src", weatherIcon);
-            dayTemp.textContent = daily[i].temp.max;
-            dayWind.textContent = daily[i].wind_speed;
-            dayHumidity.textContent = daily[i].humidity;
+      date.textContent = day;
+      dayIcon.setAttribute("src", weatherIcon);
+      dayTemp.textContent = daily[i].temp.max;
+      dayWind.textContent = daily[i].wind_speed;
+      dayHumidity.textContent = daily[i].humidity;
 
-        };
+      };
     };
 };
 
@@ -196,7 +195,6 @@ function createHistory() {
     // Call to generate search history buttons
     historyButtons();
 };
-
 
 
 createHistory();
