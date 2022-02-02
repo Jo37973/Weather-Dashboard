@@ -42,6 +42,7 @@
 
 # Credits
 * Joanna Pastcan 2022
+* UCI Full-Stack Coding Bootcamp Student
 * Collaborated with Dustin Smith
 * Coding Class README below: © 2022 Trilogy Education Services, LLC, a 2U, Inc. brand. Confidential and Proprietary. All Rights Reserved.
 * https://www.google.com as a resource to look up information

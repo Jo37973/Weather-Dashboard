@@ -148,7 +148,7 @@ function useSearchHistory(e) {
   getLatLon(search);
 };
 
-// Add the recent search to the search history and then redraw the buttons to the page
+// Add the recent city search to the search history and then redraw the buttons to the page
 function addHistory(search) {
     if (searchHistory.indexOf(search) !== -1) {
         return;
