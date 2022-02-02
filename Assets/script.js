@@ -143,6 +143,9 @@ function citySearch(e){
 
 // This function starts the search for latitude and longitude using the search history buttons. 
 function useSearchHistory(e) {
+  if (!e.target.matches("button.history")) {
+    return;
+  };
   var btn = e.target;
   var search = btn.getAttribute("data-search");
   getLatLon(search);
@@ -172,7 +175,7 @@ function historyButtons() {
 
         var btn = document.createElement("button");
         btn.setAttribute("type", "button");
-        btn.classList.add('history-btn',  'btn-history');
+        btn.setAttribute("class", "history");
         var space = document.createElement("br");
 
         // `data-search` allows access to the city name when click handler happens
